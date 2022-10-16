@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4b9ef5a5f33088479a9c73a2c7c8575, type: 3}
+  m_Name: Cerberus
+  m_EditorClassIdentifier: 
+  name: Cerberus
+  FirstIngredient: {fileID: 11400000, guid: 363625595d5050448b804b0c588b18bb, type: 2}
+  SecondIngredient: {fileID: 11400000, guid: 4c697843d02d965459044dfa6560501a, type: 2}
+  MonsterImage: {fileID: 21300000, guid: 86bb13626d9f7ee49b9ca55030748936, type: 3}

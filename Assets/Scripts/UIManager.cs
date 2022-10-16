@@ -10,6 +10,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] GameObject _bookPanelObject;
     [SerializeField] GameObject _gameUIParentObject;
     [SerializeField] GameObject _mainMenuUIParentObject;
+    [SerializeField] GameObject _mainMenuButton;
 
     bool _bookOpened = false;
     public void MainMenuButtonClicked()
@@ -24,6 +25,7 @@ public class UIManager : MonoBehaviour
         _bookOpened = !_bookOpened;
         _bookUIObject.SetActive(!_bookOpened);
         _bookPanelObject.SetActive(_bookOpened);
+        _mainMenuButton.SetActive(!_bookOpened);
         if (_mainMenuUIParentObject.activeSelf && _gameUIParentObject.activeSelf == false)
         {
             _mainMenuUIParentObject.SetActive(false);

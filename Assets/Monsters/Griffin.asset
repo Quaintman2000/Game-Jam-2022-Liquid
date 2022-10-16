@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4b9ef5a5f33088479a9c73a2c7c8575, type: 3}
+  m_Name: Griffin
+  m_EditorClassIdentifier: 
+  name: Griffin
+  FirstIngredient: {fileID: 11400000, guid: 2c2af2b2377bc5644b1eb5b7fa47883a, type: 2}
+  SecondIngredient: {fileID: 11400000, guid: 4c697843d02d965459044dfa6560501a, type: 2}
+  MonsterImage: {fileID: 21300000, guid: 3632660db294750468e06c191d2ef597, type: 3}
