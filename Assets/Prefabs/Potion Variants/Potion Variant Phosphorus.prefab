@@ -165,16 +165,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -3214401620925254469, guid: 4c99b449afaefba429868206cfb171c5, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 2
+      value: 3.45
       objectReference: {fileID: 0}
     - target: {fileID: -3214401620925254469, guid: 4c99b449afaefba429868206cfb171c5, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 3.29
+      value: 3.79
       objectReference: {fileID: 0}
     - target: {fileID: 834434767240669732, guid: 4c99b449afaefba429868206cfb171c5, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 474743fd1d14e0d49adbf83ffa9ce83a, type: 3}
+      objectReference: {fileID: 21300000, guid: ac8294478cd7b3749ab4eaa4f92df31c, type: 3}
     - target: {fileID: 834434767240669733, guid: 4c99b449afaefba429868206cfb171c5, type: 3}
       propertyPath: m_Name
       value: Potion Variant Phosphorus
@@ -185,11 +185,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 834434767240669755, guid: 4c99b449afaefba429868206cfb171c5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.030917455
       objectReference: {fileID: 0}
     - target: {fileID: 834434767240669755, guid: 4c99b449afaefba429868206cfb171c5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 3.5590823
       objectReference: {fileID: 0}
     - target: {fileID: 834434767240669755, guid: 4c99b449afaefba429868206cfb171c5, type: 3}
       propertyPath: m_LocalPosition.z

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Ghost
   m_EditorClassIdentifier: 
   name: Ghost
-  FirstIngredient: {fileID: 0}
-  SecondIngredient: {fileID: 0}
-  MonsterImage: {fileID: 0}
+  FirstIngredient: {fileID: 11400000, guid: 2c2af2b2377bc5644b1eb5b7fa47883a, type: 2}
+  SecondIngredient: {fileID: 11400000, guid: 97b8d67444a628c40bf7dc885b777a85, type: 2}
+  MonsterImage: {fileID: 21300000, guid: 42d6ab44b4f915d489385a90b10e42cf, type: 3}

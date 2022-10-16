@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Goblin
   m_EditorClassIdentifier: 
   name: Goblin
-  FirstIngredient: {fileID: 0}
-  SecondIngredient: {fileID: 0}
+  FirstIngredient: {fileID: 11400000, guid: 2c2af2b2377bc5644b1eb5b7fa47883a, type: 2}
+  SecondIngredient: {fileID: 11400000, guid: 363625595d5050448b804b0c588b18bb, type: 2}
   MonsterImage: {fileID: 0}

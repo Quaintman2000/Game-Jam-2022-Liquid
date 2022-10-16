@@ -35,16 +35,13 @@ public class PlayerController : MonoBehaviour
         {
             // Send a raycast from our mouse position.
             RaycastHit2D _hit;
-            Debug.Log("RayCast sent." +_worldPositon );
             // If we hit something with our raycast...
             _hit = Physics2D.Raycast(_worldPositon, Vector2.zero, Mathf.Infinity);
             if (_hit.collider != null)
             {
-                Debug.Log("RayCast hit." + _hit.collider.name);
                 // If the thing we hit has a potion item script on it...
                 if (_hit.collider.TryGetComponent<PotionItem>(out PotionItem item))
                 {
-                    Debug.Log("RayCast hit item.");
                     // Set that item to be our current Item.
                     _potionItem = item.GrabItem(_mousePosition);
                 }

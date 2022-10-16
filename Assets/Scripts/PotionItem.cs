@@ -7,7 +7,6 @@ using UnityEngine;
 public class PotionItem : MonoBehaviour
 {
     public PotionType PotionType;
-    public int PotionValue = 0;
 
     [SerializeField] Rigidbody2D rigidbody;
     [SerializeField] Collider2D collider;
@@ -15,9 +14,8 @@ public class PotionItem : MonoBehaviour
     [SerializeField] int orderLayer = 0;
 
     float _originalGravityScale = 1f;
-    private void Awake()
+    private void Start()
     {
-        PotionItemManager.Instance.AddPotion(this);
         TryGetComponent<Rigidbody2D>(out rigidbody);
         _originalGravityScale = rigidbody.gravityScale;
         collider = GetComponent<Collider2D>();

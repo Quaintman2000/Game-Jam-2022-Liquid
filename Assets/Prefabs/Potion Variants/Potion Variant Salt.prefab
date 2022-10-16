@@ -181,16 +181,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -3214401620925254469, guid: 4c99b449afaefba429868206cfb171c5, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.95
+      value: 2.43
       objectReference: {fileID: 0}
     - target: {fileID: -3214401620925254469, guid: 4c99b449afaefba429868206cfb171c5, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 3.29
+      value: 3.38
       objectReference: {fileID: 0}
     - target: {fileID: 834434767240669732, guid: 4c99b449afaefba429868206cfb171c5, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 1d130991a81017b4a9b4046ef0302b0b, type: 3}
+      objectReference: {fileID: 21300000, guid: 02a6260c62d32344c862dafe695bb19c, type: 3}
     - target: {fileID: 834434767240669733, guid: 4c99b449afaefba429868206cfb171c5, type: 3}
       propertyPath: m_Name
       value: Potion Variant Salt
@@ -201,11 +201,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 834434767240669755, guid: 4c99b449afaefba429868206cfb171c5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -2.5506902
       objectReference: {fileID: 0}
     - target: {fileID: 834434767240669755, guid: 4c99b449afaefba429868206cfb171c5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 3.4817886
       objectReference: {fileID: 0}
     - target: {fileID: 834434767240669755, guid: 4c99b449afaefba429868206cfb171c5, type: 3}
       propertyPath: m_LocalPosition.z

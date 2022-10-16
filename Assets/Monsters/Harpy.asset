@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Harpy
   m_EditorClassIdentifier: 
   name: Harpy
-  FirstIngredient: {fileID: 6245177927171239608, guid: 54075aa94f02c9847b8d96c5b466df5a, type: 3}
-  SecondIngredient: {fileID: 7954554418177592796, guid: 5fc8b8cba42028b4885f223b6f425dad, type: 3}
+  FirstIngredient: {fileID: 11400000, guid: 97b8d67444a628c40bf7dc885b777a85, type: 2}
+  SecondIngredient: {fileID: 11400000, guid: 2c2af2b2377bc5644b1eb5b7fa47883a, type: 2}
   MonsterImage: {fileID: 0}

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Werewolf
   m_EditorClassIdentifier: 
   name: Werewolf
-  FirstIngredient: {fileID: 0}
-  SecondIngredient: {fileID: 0}
-  MonsterImage: {fileID: 0}
+  FirstIngredient: {fileID: 11400000, guid: 97b8d67444a628c40bf7dc885b777a85, type: 2}
+  SecondIngredient: {fileID: 11400000, guid: 363625595d5050448b804b0c588b18bb, type: 2}
+  MonsterImage: {fileID: 21300000, guid: c387de5d8b9387946a0f9820633f0725, type: 3}

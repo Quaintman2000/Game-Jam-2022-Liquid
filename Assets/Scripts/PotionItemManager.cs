@@ -6,6 +6,14 @@ public class PotionItemManager : MonoBehaviour
 {
 
     public static PotionItemManager Instance;
+    [System.Serializable]
+    struct PotionInfo
+    {
+        public PotionItem Potion;
+        public Vector3 SpawnPosition;
+    }
+    [SerializeField]
+    List<PotionInfo> _potions = new List<PotionInfo>(0);
     private void Awake()
     {
         if (Instance != null)
@@ -13,28 +21,14 @@ public class PotionItemManager : MonoBehaviour
 
         Instance = this;
     }
-    struct PotionInfo
-    {
-        public PotionItem Potion;
-        public Vector3 SpawnPosition;
-    }
-    List<PotionInfo> _potions = new List<PotionInfo>(0);
 
-    public void AddPotion(PotionItem item)
-    {
-        PotionInfo __newPotion = new PotionInfo();
-        __newPotion.Potion = item;
-        __newPotion.SpawnPosition = item.transform.position;
-        _potions.Add(__newPotion);
-    }
-
-    public void ResetPotion(PotionItem potionItem)
+    public void ResetPotion(PotionItem potionItem, bool isVisible)
     {
         foreach(PotionInfo info in _potions)
         {
             if(info.Potion == potionItem)
             {
-                potionItem.gameObject.SetActive(false);
+                potionItem.gameObject.SetActive(isVisible);
                 potionItem.transform.position = info.SpawnPosition;
                 break;
             }
@@ -48,5 +42,12 @@ public class PotionItemManager : MonoBehaviour
             info.Potion.gameObject.SetActive(true);
         }
 
+    }
+    public void HideAllPotions()
+    {
+        foreach (PotionInfo info in _potions)
+        {
+            info.Potion.gameObject.SetActive(false);
+        }
     }
 }

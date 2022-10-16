@@ -118,11 +118,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acd64b7328686a34abbaf689b123509c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PotionValue: 0
+  PotionType: {fileID: 0}
   rigidbody: {fileID: 9120611444004344748}
   collider: {fileID: -3214401620925254469}
   spriteRenderer: {fileID: 834434767240669732}
-  orderLayer: 0
+  orderLayer: 1
 --- !u!61 &-3214401620925254469
 BoxCollider2D:
   m_ObjectHideFlags: 0
