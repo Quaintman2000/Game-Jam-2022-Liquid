@@ -105,7 +105,7 @@ public class Cauldron : MonoBehaviour
         while (__timeLeft >= 0)
         {
             _discoverSpriteRenderer.transform.position += (__moveToPosition - _discoverSpriteRenderer.transform.position) * __speed * Time.deltaTime;
-            _discoverSpriteRenderer.transform.localScale = __originalScale * _animationCurve.Evaluate(Time.time - __startTime);
+            _discoverSpriteRenderer.transform.localScale = __originalScale * _animationCurve.Evaluate(_animationTime - __timeLeft);
             __timeLeft -= Time.deltaTime;
             yield return null;
         }

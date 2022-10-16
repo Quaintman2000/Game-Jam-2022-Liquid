@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 public class BookUIManager : MonoBehaviour
 {
     [System.Serializable]
-    struct MonsterIcon
+    class MonsterIcon
     {
         public MonsterData Monster;
         public Image MaskImage;
@@ -32,8 +32,11 @@ public class BookUIManager : MonoBehaviour
     {
         foreach (MonsterIcon monster in _monsterIcons)
         {
-            Color __revealColor = new Color(0, 0, 0, 0);
-            monster.MaskImage.color = __revealColor;
+            if (monster.IsRevealed)
+            {
+                Color __revealColor = new Color(0, 0, 0, 0);
+                monster.MaskImage.color = __revealColor;
+            }
         }
     }
     async void StartRevealRoutinesRoutine()
@@ -75,8 +78,8 @@ public class BookUIManager : MonoBehaviour
     {
         Debug.Log("DiscoveredMonster: " + monster.name);
         MonsterIcon __foundIcon = FindIconForMonster(monster);
-        __foundIcon.IsRevealed = true;
         _newlyFoundMonsterIcons.Add(__foundIcon);
+        
     }
 
     MonsterIcon FindIconForMonster(MonsterData monster)
@@ -85,6 +88,7 @@ public class BookUIManager : MonoBehaviour
         {
             if (monster == icon.Monster)
             {
+                icon.IsRevealed = true;
                 return icon;
             }
         }

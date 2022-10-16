@@ -24,6 +24,14 @@ public class UIManager : MonoBehaviour
         _bookOpened = !_bookOpened;
         _bookUIObject.SetActive(!_bookOpened);
         _bookPanelObject.SetActive(_bookOpened);
+        if (_mainMenuUIParentObject.activeSelf && _gameUIParentObject.activeSelf == false)
+        {
+            _mainMenuUIParentObject.SetActive(false);
+        }
+        else if(_mainMenuUIParentObject.activeSelf == false && _gameUIParentObject.activeSelf == false)
+        {
+            _mainMenuUIParentObject.SetActive(true);
+        }
     }
 
     public void QuitButtonClicked()
