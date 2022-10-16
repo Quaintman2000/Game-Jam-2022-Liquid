@@ -15,4 +15,4 @@ MonoBehaviour:
   name: Imp
   FirstIngredient: {fileID: 11400000, guid: 363625595d5050448b804b0c588b18bb, type: 2}
   SecondIngredient: {fileID: 11400000, guid: 97b8d67444a628c40bf7dc885b777a85, type: 2}
-  MonsterImage: {fileID: 0}
+  MonsterImage: {fileID: 21300000, guid: e9f2cf079975013429afd4fd449fc567, type: 3}

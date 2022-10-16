@@ -21,6 +21,8 @@ public class BookUIManager : MonoBehaviour
     [SerializeField] float _revealTime = 1f;
 
     List<MonsterIcon> _newlyFoundMonsterIcons = new List<MonsterIcon>();
+    [SerializeField] GameObject[] _pageSets = new GameObject[2];
+    int _currentPageIndex = 0;
 
     private void OnEnable()
     {
@@ -93,5 +95,13 @@ public class BookUIManager : MonoBehaviour
             }
         }
         return _monsterIcons[0];
+    }
+
+    public void SwitchPage(int direction)
+    {
+        _currentPageIndex += direction;
+        //_currentPageIndex = (int)Mathf.Clamp(_currentPageIndex, 0, _pageSets.Length - 1);
+        _pageSets[_currentPageIndex].SetActive(true);
+        _pageSets[_currentPageIndex - direction].SetActive(false);
     }
 }

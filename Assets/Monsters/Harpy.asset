@@ -15,4 +15,4 @@ MonoBehaviour:
   name: Harpy
   FirstIngredient: {fileID: 11400000, guid: 97b8d67444a628c40bf7dc885b777a85, type: 2}
   SecondIngredient: {fileID: 11400000, guid: 2c2af2b2377bc5644b1eb5b7fa47883a, type: 2}
-  MonsterImage: {fileID: 0}
+  MonsterImage: {fileID: 21300000, guid: 6bc7278e335debb4f81ceee34c860458, type: 3}
