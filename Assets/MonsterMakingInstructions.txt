@@ -1,0 +1,50 @@
+DISCLAIMER: If you're having a hard time following this steps, you could be in older version of the project repo. Make sure you pull everything to stay up to date. If you see nothing the "Scene" view, ensure you have the "GameplayScene" scene open before continuing.
+
+How to make a new Potion type:
+1. Right click on the project window in the Editor.
+2. Hover over "Create".
+3. Click on "Potion Type"
+4. A file will appear with a Blue and Orange cube symbol (as of Unity 2020.3.25f1), rename that file to be whatever "type" you want.
+5. Next, in the "prefabs" folder, there is a "potion" prefab file in there. Right click on it.
+6. Hover over create.
+7. Click on "Prefab Variant" and name it like this "Potion variant [potion type here]".
+	7.a Nameing of the prefab variant isn't critical. It's just for naming consistency.
+8. Double left click on the new variant to open it in prefab view replace the sprite to the new sprite and readjust the collider.
+	8a. To change out the sprite, ensure the image type is a sprite by clicking on the file and changing texture type from "Defualt" to "Sprite". Next, go back to the prefab variant, find the "SpriteRenderer" component in the inspector and switch out the "Sprite" variable. P.S. you may have to click on "set native size" and scale it make sure it looks right.
+	8b. To adjust the collider, in the prefab variant, find the "Box Collider 2D" component in the inspector and button next to "Edit Collider" that looks like a star constellation. This is important as it's the clickable area to "grab" the potion.
+9. Drag into the scene in the desired position.
+10. Add it to the "potions" list in the "PotionManager".
+	10a. To do this, click the plus button below the potions text and new "element" will appear like "element 5" or something similar.
+	10b. Click on the drop down and two entries will appear.
+		10b1. Drag the new potion from the Hierarchy tab into the "Potion" bar.
+		10b2. Copy the X, Y, and Z cordinates from the potion's "Position" data in the "transform" component.
+
+How to make a new monster type:
+1. Right click on the project window in the Editor.
+2. Hover over "Create".
+3. Click on "Monster Data".
+4. A file will appear with a Blue and Orange cube symbol (as of Unity 2020.3.25f1), rename that file to be monster's name.
+5. There should be several entries to be filled out when you click on it.
+	5a. Name is the name...
+	5b. Drag a potion type in the "FirstIngredient" entry to be the first ingredient in the recipe.
+	5c. Repeat "5b" for the "SecondIngredient" entry.
+	5d. Drag in the monster sprite into "Monster Image"
+6. Click on the "Cauldron" object in the scene.
+7. In the "Cauldron" component within the "Cauldron" object, add the new monster data into that list of monsters.
+	7a. To do this, click on the plus button and drag it into the new empty slot.
+
+How to add a new monster to the book:
+1. Ensure you've completed the "How to make a new monster type" section to the fullest.
+2. In the scene, Click the drop down for the following order... "UI Canvas"-> "GameUI" -> "BookPanel"
+	2a. You may have to set "GameUI" and "BookPanel" to active in order to see them.
+		2a1. To set them to be active, click on the object and next to their name in the inspector, there's a box to click to be active or not.
+3. Now you'll see two panels under that. A left page panel and a right page panel. Click on the drop down of the desired page you want to work in.
+	3a. There will be some place holders already for the Goblin, Harpy, and Imp. If you're doing this for one of these creatures, skip to step 5.
+4. Duplicate one of the "[Monster name here]Image" objects, move it to desired spot, and rename it appropraitely.
+	4a. That new object will have a drop down for another called "MaskImage". 
+5. Shift or Cntrl click both the "[Monster name here]Image" object and its respective "MaskImage" object and switch out the sprite for your new monster sprite.
+6. In the "BookPanel" object in the scene, there is a "Book UI Manager" component. Click on the plus button under the "Monster Icons" list to add a new entry.
+	6a. Enter the monster data in the "Monster" Slot.
+	6b. Drag and drop the "MaskImage" object from the respective Monster images pair from eariler in the heirarchy into the "Mask Image" slot.
+	6c. Leave "Is Revealed" alone.
+
